@@ -10,7 +10,7 @@ import java.net.http.HttpResponse;
 
 public class Conversor {
     public Moeda converterMoeda(String valor1, String valor2, double moeda){
-        String minhaKey = "543f94a7fb20d5aaba94794c";
+        String minhaKey = "API_KEY";
         URI endereco = URI.create("https://v6.exchangerate-api.com/v6/"+
                 minhaKey+"/pair/"+valor1+"/"+valor2+"?amount="+moeda);
 
